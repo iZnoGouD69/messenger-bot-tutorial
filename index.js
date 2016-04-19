@@ -99,7 +99,7 @@ function sendGenericMessage(sender) {
                     "buttons": [{
                         "type": "postback",
                         "title": "Wanna fuck me?",
-                        "payloda": "Tu rehne de beta tuj se na hoga",
+                        "payload": "Tu rehne de beta tuj se na hoga",
                     }],
                 }]
             }
