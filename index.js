@@ -32,7 +32,7 @@ app.post('/webhook/', function (req, res) {
 		sender = event.sender.id
 		if (event.message && event.message.text) {
 			text = event.message.text
-			if (text == 'Generic') {
+			if (text == 'Mia Khalifa') {
 				sendGenericMessage(sender)
 				continue
 			}
@@ -89,8 +89,8 @@ function sendGenericMessage(sender) {
                         "title": "Too hot?"
                     }, {
                         "type": "postback",
-                        "title": "Scroll Left...",
-                        "payload": "Payload for first element in a generic bubble",
+                        "title": "Wanna fuck her?",
+                        "payload": "Tu rehne de tujse na ho payega",
                     }]
                 }]
             }
