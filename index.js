@@ -25,7 +25,7 @@ const Wit = require('../').Wit;
 const PORT = process.env.PORT || 5000;
 
 // Wit.ai parameters
-const WIT_TOKEN = process.env.WIT_TOKEN;
+const WIT_TOKEN = 'N77QEAAGTQIMGXYBLU53GBXF6PTEGM4B';
 
 // Messenger API parameters
 const FB_PAGE_ID = '239206492868633';
