@@ -36,6 +36,9 @@ app.post('/webhook/', function (req, res) {
 				sendGenericMessage(sender)
 				continue
 			}
+			if(text == 'Bc'){
+				sendTextMessage(sender,"Gali kisko de raha bhosdike")
+			}
 			sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
 		}
 		if (event.postback) {
