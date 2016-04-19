@@ -80,7 +80,7 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Here's your Mia Khalida",
+                    "title": "Here's your Mia Khalifa",
                     "subtitle": "Just name the porn star you want and I'll bring her pics",
                     "image_url": "http://www.pmnupdates.com/wp-content/uploads/2015/09/Mia-khalifa.jpg",
                     "buttons": [{
