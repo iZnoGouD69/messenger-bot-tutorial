@@ -80,26 +80,26 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "First card",
-                    "subtitle": "Element #1 of an hscroll",
+                    "title": "Here's your Mia Khalida",
+                    "subtitle": "Just name the porn star you want and I'll bring her pics",
                     "image_url": "http://www.pmnupdates.com/wp-content/uploads/2015/09/Mia-khalifa.jpg",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.messenger.com",
-                        "title": "web url"
+                        "title": "Too hot?"
                     }, {
                         "type": "postback",
-                        "title": "Postback",
+                        "title": "Scroll Left...",
                         "payload": "Payload for first element in a generic bubble",
                     }],
                 }, {
-                    "title": "Second card",
-                    "subtitle": "Element #2 of an hscroll",
-                    "image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "title": "SSShhhhhhhh",
+                    "subtitle": "When she says finger on your lips...",
+                    "image_url": "https://usatthebiglead.files.wordpress.com/2015/07/ms6ieiewzdorh8sygrbx.jpg",
                     "buttons": [{
                         "type": "postback",
-                        "title": "Postback",
-                        "payload": "Payload for second element in a generic bubble",
+                        "title": "Wanna fuck me?",
+                        "Tu rehne de beta tuj se na hoga",
                     }],
                 }]
             }
