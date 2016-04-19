@@ -36,7 +36,11 @@ app.post('/webhook/', function (req, res) {
 				sendGenericMessage(sender)
 				continue
 			}
-			if(text == 'Bc'){
+			if(text === 'Mia Khalifa' ){
+				sendMiaKhalifa(sender)
+				continue
+			}
+			if(text === 'Bc'){
 				sendTextMessage(sender,"Gali kisko de raha bhosdike")
 			}
 			sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
@@ -100,6 +104,56 @@ function sendGenericMessage(sender) {
 						"type": "postback",
 						"title": "Postback",
 						"payload": "Payload for second element in a generic bubble",
+					}],
+				}]
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
+}
+
+// Mia Khalifa
+function sendMiaKhalifa(sender) {
+	messageData = {
+		"attachment": {
+			"type": "template",
+			"payload": {
+				"template_type": "generic",
+				"elements": [{
+					"title": "Mia Khalifa",
+					"subtitle": "Muthiye marega?",
+					"image_url": "http://www.pmnupdates.com/wp-content/uploads/2015/09/Mia-khalifa.jpg",
+					"buttons": [{
+						"type": "web_url",
+						"url": "https://www.messenger.com",
+						"title": "Khada hua?"
+					}, {
+						"type": "postback",
+						"title": "Nai? Scroll kar aur hai",
+						"payload": "Payload for first element in a generic bubble",
+					}],
+				}, {
+					"title": "Shhhhhhh",
+					"subtitle": "Chup chat hila k soja",
+					"image_url": "https://usatthebiglead.files.wordpress.com/2015/07/ms6ieiewzdorh8sygrbx.jpg",
+					"buttons": [{
+						"type": "postback",
+						"title": "Wanna fuck me?",
+						"payload": "Ain't yout local slut, my heels higher than your standards",
 					}],
 				}]
 			}
