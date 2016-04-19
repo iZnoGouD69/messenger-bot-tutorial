@@ -91,16 +91,7 @@ function sendGenericMessage(sender) {
                         "type": "postback",
                         "title": "Scroll Left...",
                         "payload": "Payload for first element in a generic bubble",
-                    }],
-                }, {
-                    "title": "SSShhhhhhhh",
-                    "subtitle": "When she says finger on your lips...",
-                    "image_url": "https://usatthebiglead.files.wordpress.com/2015/07/ms6ieiewzdorh8sygrbx.jpg",
-                    "buttons": [{
-                        "type": "postback",
-                        "title": "Wanna fuck me?",
-                        "payload": "Tu rehne de beta tuj se na hoga",
-                    }],
+                    }]
                 }]
             }
         }
