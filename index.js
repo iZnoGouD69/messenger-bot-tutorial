@@ -84,26 +84,26 @@ function sendGenericMessage(sender) {
 			"payload": {
 				"template_type": "generic",
 				"elements": [{
-					"title": "First card",
-					"subtitle": "Element #1 of an hscroll",
-					"image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+					"title": "Le teri Mia Khalifa",
+					"subtitle": "Hila le ab isko dekh k",
+					"image_url": "http://www.pmnupdates.com/wp-content/uploads/2015/09/Mia-khalifa.jpg",
 					"buttons": [{
 						"type": "web_url",
 						"url": "https://www.messenger.com",
-						"title": "web url"
+						"title": "Khada hua?"
 					}, {
 						"type": "postback",
-						"title": "Postback",
+						"title": "Nai? Scroll kar aur ek hai",
 						"payload": "Payload for first element in a generic bubble",
 					}],
 				}, {
-					"title": "Second card",
-					"subtitle": "Element #2 of an hscroll",
-					"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+					"title": "Shhhhhhhhhhh",
+					"subtitle": "Chup chap hila k soja",
+					"image_url": "https://usatthebiglead.files.wordpress.com/2015/07/ms6ieiewzdorh8sygrbx.jpg",
 					"buttons": [{
 						"type": "postback",
-						"title": "Postback",
-						"payload": "Payload for second element in a generic bubble",
+						"title": "Wanna fuck me?",
+						"payload": "Rehne de beta tuj se ha hoga",
 					}],
 				}]
 			}
@@ -126,56 +126,6 @@ function sendGenericMessage(sender) {
 	})
 }
 
-// Mia Khalifa
-function sendMiaKhalifa(sender) {
-	messageData = {
-		"attachment": {
-			"type": "template",
-			"payload": {
-				"template_type": "generic",
-				"elements": [{
-					"title": "Mia Khalifa",
-					"subtitle": "Muthiye marega?",
-					"image_url": "http://www.pmnupdates.com/wp-content/uploads/2015/09/Mia-khalifa.jpg",
-					"buttons": [{
-						"type": "web_url",
-						"url": "https://www.messenger.com",
-						"title": "Khada hua?"
-					}, {
-						"type": "postback",
-						"title": "Nai? Scroll kar aur hai",
-						"payload": "Payload for first element in a generic bubble",
-					}],
-				}, {
-					"title": "Shhhhhhh",
-					"subtitle": "Chup chat hila k soja",
-					"image_url": "https://usatthebiglead.files.wordpress.com/2015/07/ms6ieiewzdorh8sygrbx.jpg",
-					"buttons": [{
-						"type": "postback",
-						"title": "Wanna fuck me?",
-						"payload": "Ain't yout local slut, my heels higher than your standards",
-					}],
-				}]
-			}
-		}
-	}
-	
-request({
-		url: 'https://graph.facebook.com/v2.6/me/messages',
-		qs: {access_token:token},
-		method: 'POST',
-		json: {
-			recipient: {id:sender},
-			message: messageData,
-		}
-	}, function(error, response, body) {
-		if (error) {
-			console.log('Error sending messages: ', error)
-		} else if (response.body.error) {
-			console.log('Error: ', response.body.error)
-		}
-	})
-}
 // spin spin sugar
 app.listen(app.get('port'), function() {
 	console.log('running on port', app.get('port'))
