@@ -8,6 +8,22 @@ const Wit = require('../').Wit;
 
 app.set('port', (process.env.PORT || 5000))
 
+// WI Toekn
+const WIT_TOKEN = 'N77QEAAGTQIMGXYBLU53GBXF6PTEGM4B';
+
+// Messenger API parameters
+const FB_PAGE_ID = '239206492868633';
+if (!FB_PAGE_ID) {
+  throw new Error('missing FB_PAGE_ID');
+}
+const FB_PAGE_TOKEN = 'CAAHvyqgTUiUBAIhYNHyjpvcXqrrWBS6QdUuE9BLvqoSItcMOX3sefl6b1oEKhM9F0YT0ht4EM5VyStYgq6coLOA6sv8ZA51WYanQV4R3zZAqTc5nAbKMSnxHXg0QjW5ZCZATq1AAzWkQtivgUhr3K5ybptc5mZBPsUqNNJDUHq4bdfCinUzFQwRDnNgkQIlnmyxffmZCVMdQZDZD';
+if (!FB_PAGE_TOKEN) {
+  throw new Error('missing FB_PAGE_TOKEN');
+}
+const FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN;
+
+
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: false}))
 
