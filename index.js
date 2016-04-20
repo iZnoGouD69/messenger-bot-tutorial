@@ -20,8 +20,7 @@ const FB_PAGE_TOKEN = 'CAAHvyqgTUiUBAIhYNHyjpvcXqrrWBS6QdUuE9BLvqoSItcMOX3sefl6b
 if (!FB_PAGE_TOKEN) {
   throw new Error('missing FB_PAGE_TOKEN');
 }
-const FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN;
-
+const FB_VERIFY_TOKEN = 'my_voice_is_my_password_verify_me';
 
 
 // parse application/x-www-form-urlencoded
